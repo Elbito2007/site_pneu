@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ceedd7;
+}
+
+.header,
+.navegation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(25, 24, 24);
+}
+
+.header{
+    background-color: rgb(25, 24, 24);
+    box-shadow: 1px 1px 4px rgb(25, 24, 24);
+    height: 5.5em;
+    justify-content: space-between;
+    padding: 0 10%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.navegation_header{
+    gap: 3em;
+}
+
+.navegation_header a{
+    text-decoration: none;
+    color: purple;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.navegation_header a:hover{
+    color: #ffffff;
+    transition: 1s;
+}
+
+.img_logo_header{
+    width: 50px;
+    background-color: rgb(25, 24, 24);
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: inline-block;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.text{
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    font-family:monospace;
+    align-items: center;
+    font-size: 150%;
+    margin: 2%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #8b7d24;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ccb114;
+}
+
+.reset{
+    background-color: rgb(189, 35, 35);
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background-color: rgb(233, 9, 9);
+}
+
+h2{
+    margin-left: 80px;
+}
+
+.seta{
+    position:relative;
+}
+
+.linha {
+    border: none;
+    border-top: 4px solid;
+    color: #000000;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .modelos{
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 5px;
+    font-family: monospace;
+    align-items: center;
+    font-size: 150%;
+    margin: 2%;
+    width: 700px;
+  }
+
+  .modelos p{
+    text-align: justify;
+    margin-left: 20px;
+  }
+
+  .modelos img{
+    margin-right: 20px;
+  }
+
+  .marcas{
+    display: flex;
+    background-color: #bce9c9;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 5px;
+    font-family: monospace;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    margin: 2%;
+    margin-bottom: 80px;
+  }
+
+  .marcas p{
+    text-align: justify;
+    margin-left: 20px;
+  }
+
+  .marcas img{
+    margin-right: 20px;
+  }
+
+  .thanks{
+    font-family: monospace;
+    font-size: 350%;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    margin-top: 240px;
+    margin-bottom: 240px;
+  }
+
+
+
+  @media screen and (min-width:820px) and (max-width:1180px){/*iPad Air*/
+
+   body, div{ background: rgb(167, 167, 255); }
+
+     .header{ margin-right: 0px; font-size: 80%; margin-left: 0%;}
+
+     main{ min-height: 600px; box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); flex-direction: column;}
+
+     section{ font-size: 150%;}
+
+     footer{
+        margin-top: 60px;
+     }
+    
+     .thanks{
+        margin-top: 450px;
+    margin-bottom: 450px;
+     }
+}		
